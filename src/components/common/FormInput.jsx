@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Input } from './generic/Input';
-import { Text } from './generic/Text';
+import { Input } from '../generic/Input';
+import { Text } from '../generic/Text';
 
 export const FormInput = ({
   title,
@@ -16,6 +16,7 @@ export const FormInput = ({
 const SFormInput = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 const STitle = styled(Text)`

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Text, Title, H1, H2 } from '../../components/generic/Text';
-import { RegistrationForm } from '../../components/RegistrationForm';
+import { VoteOrgRegistration } from '../../components/common/VoteOrgRegistration';
 
 export const RegistrationPage = ({
   ...props
@@ -12,7 +12,7 @@ export const RegistrationPage = ({
         <STitle>Get ready to vote with Up To Us</STitle>
         <H2>Make sure you are ready to vote</H2>
       </SHeader>
-      <RegistrationForm />
+      <VoteOrgRegistration />
     </SContent>
   </SRegistrationPage>
 )
@@ -26,6 +26,7 @@ const SContent = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1000px;
+  min-height: 100vh;
   margin: 0 auto;
 `;
 
